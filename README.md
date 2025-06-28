@@ -1,15 +1,15 @@
-# 🚀 Terraform Project – GitHub Repo + AWS EC2 Deployment
+#  Terraform Project – GitHub Repo + AWS EC2 Deployment
 
 This project demonstrates practical Infrastructure as Code (IaC) using **Terraform**, including:
 
 - Automated creation of a GitHub repository
 - Provisioning of an EC2 instance on AWS
 
-> ✅ This is a hands-on example of how Terraform can automate cloud and platform resources across multiple providers.
+>  This is a hands-on example of how Terraform can automate cloud and platform resources across multiple providers.
 
 ---
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 - **Terraform v1.6+**
 - **AWS EC2**
@@ -17,19 +17,18 @@ This project demonstrates practical Infrastructure as Code (IaC) using **Terrafo
 
 ---
 
-## 📁 Project Structure
+## project Structure
 
-| File               | Purpose                                              |
-|--------------------|------------------------------------------------------|
-| `main.tf`          | Defines all infrastructure (GitHub + EC2)            |
-| `variables.tf`     | Input variables for reusability and clean code       |
-| `terraform.tfvars` | Secrets and values used by variables (not committed) |
-| `.gitignore`       | Prevents committing sensitive and unnecessary files  |
-| `README.md`        | Explains the project and how to run it               |
+ File               | Purpose                                              
+ `main.tf`          | Defines all infrastructure (GitHub + EC2)            
+ `variables.tf`     | Input variables for reusability and clean code       
+ `terraform.tfvars` | Secrets and values used by variables (not committed) 
+ `.gitignore`       | Prevents committing sensitive and unnecessary files  
+ `README.md`        | Explains the project and how to run it               
 
 ---
 
-## 🔐 Prerequisites
+##  Prerequisites
 
 - A GitHub **Personal Access Token**
 - An AWS account with **Access Key** and **Secret Key**
@@ -37,7 +36,7 @@ This project demonstrates practical Infrastructure as Code (IaC) using **Terrafo
 
 ---
 
-## ⚙️ How to Use
+##  How to Use
 
 1. **Clone the repository**  
    ```bash
@@ -69,23 +68,23 @@ This project demonstrates practical Infrastructure as Code (IaC) using **Terrafo
 
 ---
 
-## 📦 What This Code Does
+##  What This Code Does
 
 1. Creates a **public GitHub repository** named `terraform_project`
 2. Launches a **t3.micro EC2 instance** in the `eu-north-1` region
 
 ---
 
-## ✨ Output
+##  Output
 
 You will see:
 
-- ✅ GitHub repo created under your GitHub account
-- ✅ EC2 instance listed in your AWS console
+-  GitHub repo created under your GitHub account
+-  EC2 instance listed in your AWS console
 
 ---
 
-## 🚫 Security Best Practices
+##  Security Best Practices
 
 - Secrets like `terraform.tfvars` should **never be committed**
 - Always use `.gitignore` to keep `.tfstate`, `.backup`, and `.terraform/` safe
