@@ -43,3 +43,55 @@ This project demonstrates practical Infrastructure as Code (IaC) using **Terrafo
    ```bash
    git clone https://github.com/YOUR_USERNAME/terraform-aws-github-demo.git
    cd terraform-aws-github-demo
+   ```
+
+2. **Set your secrets in `terraform.tfvars`**
+   ```hcl
+   github_token   = "ghp_yourGitHubToken"
+   aws_access_key = "yourAWSAccessKey"
+   aws_secret_key = "yourAWSSecretKey"
+   ```
+
+3. **Initialize Terraform**
+   ```bash
+   terraform init
+   ```
+
+4. **Preview changes**
+   ```bash
+   terraform plan
+   ```
+
+5. **Apply infrastructure**
+   ```bash
+   terraform apply
+   ```
+
+---
+
+## 📦 What This Code Does
+
+1. Creates a **public GitHub repository** named `terraform_project`
+2. Launches a **t3.micro EC2 instance** in the `eu-north-1` region
+
+---
+
+## ✨ Output
+
+You will see:
+
+- ✅ GitHub repo created under your GitHub account
+- ✅ EC2 instance listed in your AWS console
+
+---
+
+## 🚫 Security Best Practices
+
+- Secrets like `terraform.tfvars` should **never be committed**
+- Always use `.gitignore` to keep `.tfstate`, `.backup`, and `.terraform/` safe
+
+---
+
+## 🙋 About
+
+This project is a real-world example of how to automate infrastructure with Terraform using both **cloud services** (AWS) and **developer platforms** (GitHub).
